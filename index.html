@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #main{
+            display: flex;
+  justify-content: center;
+  align-items: center;
+        }
+#code{
+    height: 20px;
+  
+    background-color: white;
+}
+#ctry{
+    height: 22px;
+}
+
+    </style>
+    <title>country code checker</title>
+    <script src="script.js"></script>
+</head>
+<body bgcolor="black">
+<h1 align="center" style="color: white;">country code selector</h1>
+<div align="center" id="main">
+    <select name="country" id="ctry" onchange="ctrysel(this.id,'code')">
+        <option value="">Select</option>
+
+        <option value="+91">India</option>
+        <option value="+1">Usa</option>
+        <option value="+55">Brazil</option>
+        <option value="+81">Japan</option>
+        
+
+    </select>
+    <p id="code" style="color:black">..</p>
+    <input type="text" placeholder="enter phone number" maxlength="10">
+</div>
+</body>
+</html>
